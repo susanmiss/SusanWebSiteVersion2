@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+#linkedin-icon {
+  margin-top: -2px;
+}
+
+#github-icon {
+  margin-top: -2px;
+}

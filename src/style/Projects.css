@@ -1,0 +1,153 @@
+.projects {
+  margin: 2em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.pg-1 {
+  z-index: 0;
+}
+.cf {
+  position: relative;
+  height: 281px;
+  width: 34.5em;
+}
+
+#bdb,
+#bdt {
+  margin-top: 5em;
+}
+
+.cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.cf img.top:hover {
+  opacity: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 3.125em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+.btn-github {
+  width: 17em;
+  height: 3em;
+  background: #dd9f32;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-weight: 900;
+  border: #dd9f32;
+}
+
+.btn-github:hover {
+  background: rgb(198, 114, 61);
+  color: white;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  width: 100%;
+  height: auto;
+  max-width: 40.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    margin-top: 10em;
+  }
+
+  .row:last-child {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+
+  .pg-1 {
+    margin-top: -550px;
+    margin-bottom: -100px;
+  }
+
+  .pg-2 {
+    margin-top: -400px;
+  }
+
+  .cf {
+    order: 1;
+  }
+
+  .project-content {
+    margin-top: 10em;
+    order: 2;
+  }
+
+  .cf img {
+    max-width: 34.5em;
+  }
+
+  .cf img.top {
+    margin-bottom: 20em;
+  }
+
+  #bdb,
+  #bdt {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row {
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .pg-1 {
+    margin-top: -550px;
+  }
+
+  .project-content {
+    margin-top: 5em;
+  }
+
+  .cf img {
+    max-width: 20em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cf {
+    order: 1;
+  }
+
+  .project-content {
+    order: 2;
+    margin-top: -5px;
+  }
+}
